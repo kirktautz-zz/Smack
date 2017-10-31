@@ -21,6 +21,7 @@
 		FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4675A1FA29A7900B4CCD7 /* SignUpVC.swift */; };
 		FFF69E661FA8E45A00C0A8B8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */; };
 		FFF69E681FA8EBE200C0A8B8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF69E671FA8EBE200C0A8B8 /* RoundedButton.swift */; };
+		FFF69E6A1FA9016000C0A8B8 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF69E691FA9016000C0A8B8 /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FFB4675A1FA29A7900B4CCD7 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FFF69E671FA8EBE200C0A8B8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		FFF69E691FA9016000C0A8B8 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */,
+				FFF69E691FA9016000C0A8B8 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */,
 				FFF69E681FA8EBE200C0A8B8 /* RoundedButton.swift in Sources */,
 				FFB467521FA27E6500B4CCD7 /* ChannelVC.swift in Sources */,
+				FFF69E6A1FA9016000C0A8B8 /* UserDataService.swift in Sources */,
 				FFB467501FA27E5700B4CCD7 /* ChatVC.swift in Sources */,
 				FFF69E661FA8E45A00C0A8B8 /* AuthService.swift in Sources */,
 				FFB467591FA2990200B4CCD7 /* LoginVC.swift in Sources */,
