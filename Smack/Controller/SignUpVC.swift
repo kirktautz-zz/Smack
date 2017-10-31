@@ -25,6 +25,15 @@ class SignUpVC: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if UserDataService.instance.avatarName != "" {
+            profileImage.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
+    }
+    
     @IBAction func closeBtnPresseD(sender: UIButton) {
         performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
     }
