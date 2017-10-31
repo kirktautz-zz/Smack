@@ -30,7 +30,14 @@ class SignUpVC: UIViewController {
         guard let pass = passwordField.text, passwordField.text != "" else { return }
         
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
-            if success { print("registered user successfully")}
+            if success {
+                print("Created account successfully")
+                AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
+                    if success {
+                        print("Logged in user", AuthService.instance.authToken)
+                    }
+                })
+            }
         }
     }
     
