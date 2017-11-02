@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -144,7 +144,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#general" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AQ-Iq-iea">
-                                                    <rect key="frame" x="28" y="13" width="58" height="18"/>
+                                                    <rect key="frame" x="35" y="13" width="58" height="18"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -516,7 +516,7 @@
                                 <color key="textColor" red="0.34439286409999997" green="0.42627242570000001" blue="0.4876639948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smackProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-3T-Itb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smackProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-3T-Itb" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137" y="290" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="C7S-Uc-AHg"/>
@@ -543,6 +543,14 @@
                                     <action selector="generateBtnPressed:" destination="3qF-HE-fQh" eventType="touchUpInside" id="dqp-ri-Ulg"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5L0-Zb-Peb">
+                                <rect key="frame" x="169" y="250" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="A6d-o7-Xrt"/>
+                                    <constraint firstAttribute="width" constant="37" id="RCX-gd-f6B"/>
+                                </constraints>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -550,8 +558,10 @@
                             <constraint firstItem="lMe-yC-ydW" firstAttribute="bottom" secondItem="jqf-VT-DSa" secondAttribute="bottom" constant="20" id="9md-xk-j0Y"/>
                             <constraint firstItem="lIg-9y-WHf" firstAttribute="top" secondItem="Ppc-WM-cZB" secondAttribute="bottom" constant="40" id="BVb-b8-7Yj"/>
                             <constraint firstItem="d2B-8S-cpX" firstAttribute="top" secondItem="lMe-yC-ydW" secondAttribute="top" id="HYe-L5-My0"/>
+                            <constraint firstItem="5L0-Zb-Peb" firstAttribute="top" secondItem="lIg-9y-WHf" secondAttribute="bottom" id="Jqa-SC-Q5b"/>
                             <constraint firstItem="13t-zC-8yj" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="KEh-dh-xHX"/>
                             <constraint firstItem="aj5-3T-Itb" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="KVj-Nq-Wyi"/>
+                            <constraint firstItem="aj5-3T-Itb" firstAttribute="top" secondItem="5L0-Zb-Peb" secondAttribute="bottom" constant="3" id="LtS-of-NnP"/>
                             <constraint firstItem="Ppc-WM-cZB" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="Mkt-hY-dE0"/>
                             <constraint firstItem="lIg-9y-WHf" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="PGg-SW-X7Y"/>
                             <constraint firstItem="8AV-eF-fWe" firstAttribute="top" secondItem="13t-zC-8yj" secondAttribute="bottom" constant="4" id="XJT-BJ-Wwq"/>
@@ -560,11 +570,13 @@
                             <constraint firstItem="jqf-VT-DSa" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="fhd-3S-POc"/>
                             <constraint firstItem="8AV-eF-fWe" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="hPK-k1-vLD"/>
                             <constraint firstItem="Ppc-WM-cZB" firstAttribute="top" secondItem="lMe-yC-ydW" secondAttribute="top" constant="40" id="jQg-Ae-kjZ"/>
+                            <constraint firstItem="5L0-Zb-Peb" firstAttribute="centerX" secondItem="HAA-nO-qAq" secondAttribute="centerX" id="mtT-Uz-zoT"/>
                             <constraint firstItem="13t-zC-8yj" firstAttribute="width" secondItem="aj5-3T-Itb" secondAttribute="width" id="rpc-T3-8eg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lMe-yC-ydW"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="5L0-Zb-Peb" id="BKZ-KZ-Bb5"/>
                         <outlet property="emailField" destination="VNf-Wj-LRi" id="zaP-YG-y7P"/>
                         <outlet property="passwordField" destination="wAl-Ln-MFY" id="dxu-O4-z4t"/>
                         <outlet property="profileImage" destination="aj5-3T-Itb" id="ZmK-3v-xGx"/>

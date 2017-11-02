@@ -12,6 +12,7 @@
 		FF7E89BE1FA2647D0056C04E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89BC1FA2647D0056C04E /* Main.storyboard */; };
 		FF7E89C01FA2647D0056C04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89BF1FA2647D0056C04E /* Assets.xcassets */; };
 		FF7E89C31FA2647D0056C04E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89C11FA2647D0056C04E /* LaunchScreen.storyboard */; };
+		FF9436761FAACA3A0037CD6F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9436751FAACA3A0037CD6F /* CircleImage.swift */; };
 		FFB4674B1FA2787100B4CCD7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB467491FA2787100B4CCD7 /* SWRevealViewController.m */; };
 		FFB467501FA27E5700B4CCD7 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4674F1FA27E5700B4CCD7 /* ChatVC.swift */; };
 		FFB467521FA27E6500B4CCD7 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB467511FA27E6500B4CCD7 /* ChannelVC.swift */; };
@@ -36,6 +37,7 @@
 		FF7E89BF1FA2647D0056C04E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF7E89C21FA2647D0056C04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF7E89C41FA2647D0056C04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9436751FAACA3A0037CD6F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		FFB467481FA2787000B4CCD7 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		FFB467491FA2787100B4CCD7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FFB4674A1FA2787100B4CCD7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				FFB467531FA2823400B4CCD7 /* GradientView.swift */,
 				FFF69E671FA8EBE200C0A8B8 /* RoundedButton.swift */,
 				FFF69E6D1FA90AB600C0A8B8 /* AvatarCell.swift */,
+				FF9436751FAACA3A0037CD6F /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */,
 				FFF69E6C1FA9090F00C0A8B8 /* AvatarPickerVC.swift in Sources */,
 				FFF69E681FA8EBE200C0A8B8 /* RoundedButton.swift in Sources */,
+				FF9436761FAACA3A0037CD6F /* CircleImage.swift in Sources */,
 				FFB467521FA27E6500B4CCD7 /* ChannelVC.swift in Sources */,
 				FFF69E6A1FA9016000C0A8B8 /* UserDataService.swift in Sources */,
 				FFB467501FA27E5700B4CCD7 /* ChatVC.swift in Sources */,
