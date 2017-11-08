@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6F5107FD47F0ADBFC6C4803F /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51480A805725DF70CB5659DC /* Pods_Smack.framework */; };
+		FF6A71541FB2A8EC00BEA753 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A71531FB2A8EC00BEA753 /* MessageService.swift */; };
+		FF6A71561FB2A93000BEA753 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A71551FB2A93000BEA753 /* Channel.swift */; };
+		FF6A71581FB2AE9D00BEA753 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A71571FB2AE9D00BEA753 /* ChannelCell.swift */; };
 		FF7E89B91FA2647D0056C04E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E89B81FA2647D0056C04E /* AppDelegate.swift */; };
 		FF7E89BE1FA2647D0056C04E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89BC1FA2647D0056C04E /* Main.storyboard */; };
 		FF7E89C01FA2647D0056C04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89BF1FA2647D0056C04E /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		51480A805725DF70CB5659DC /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F89EF1200E76595A6F73FD /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
+		FF6A71531FB2A8EC00BEA753 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		FF6A71551FB2A93000BEA753 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		FF6A71571FB2AE9D00BEA753 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		FF7C65A6A27BF40A3316F5E8 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		FF7E89B51FA2647D0056C04E /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7E89B81FA2647D0056C04E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 		FFB4674C1FA27E1C00B4CCD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF6A71551FB2A93000BEA753 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 				FFF69E671FA8EBE200C0A8B8 /* RoundedButton.swift */,
 				FFF69E6D1FA90AB600C0A8B8 /* AvatarCell.swift */,
 				FF9436751FAACA3A0037CD6F /* CircleImage.swift */,
+				FF6A71571FB2AE9D00BEA753 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			children = (
 				FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */,
 				FFF69E691FA9016000C0A8B8 /* UserDataService.swift */,
+				FF6A71531FB2A8EC00BEA753 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -316,10 +325,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF15E8F1FABB6E200ECC939 /* ProfileVC.swift in Sources */,
+				FF6A71581FB2AE9D00BEA753 /* ChannelCell.swift in Sources */,
 				FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */,
 				FFF69E6C1FA9090F00C0A8B8 /* AvatarPickerVC.swift in Sources */,
 				FFF69E681FA8EBE200C0A8B8 /* RoundedButton.swift in Sources */,
+				FF6A71561FB2A93000BEA753 /* Channel.swift in Sources */,
 				FF9436761FAACA3A0037CD6F /* CircleImage.swift in Sources */,
+				FF6A71541FB2A8EC00BEA753 /* MessageService.swift in Sources */,
 				FFB467521FA27E6500B4CCD7 /* ChannelVC.swift in Sources */,
 				FFF69E6A1FA9016000C0A8B8 /* UserDataService.swift in Sources */,
 				FFB467501FA27E5700B4CCD7 /* ChatVC.swift in Sources */,
