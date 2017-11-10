@@ -9,7 +9,7 @@
 import UIKit
 
 class ChatVC: UIViewController {
-
+    
     // outlets
     @IBOutlet weak var menuBtn: UIButton!
     
@@ -25,8 +25,11 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             })
         }
-        MessageService.instance.findAllChannels { (success) in
-            
+        
+        if AuthService.instance.isLoggedIn {
+            MessageService.instance.findAllChannels { (success) in
+                
+            }
         }
     }
 }

@@ -40,7 +40,7 @@ class AddChannelVC: UIViewController {
         bgView.addGestureRecognizer(closeTouch)
         
         nameField.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : SMACK_PURPLE_PLACEHOLDER])
-        channelField.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : SMACK_PURPLE_PLACEHOLDER])
+        channelField.attributedPlaceholder = NSAttributedString(string: "description", attributes: [NSAttributedStringKey.foregroundColor : SMACK_PURPLE_PLACEHOLDER])
     }
     
     @objc func closeTap(gest: UITapGestureRecognizer) {
