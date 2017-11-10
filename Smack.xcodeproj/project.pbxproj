@@ -16,6 +16,7 @@
 		FF7E89C01FA2647D0056C04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89BF1FA2647D0056C04E /* Assets.xcassets */; };
 		FF7E89C31FA2647D0056C04E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7E89C11FA2647D0056C04E /* LaunchScreen.storyboard */; };
 		FF9436761FAACA3A0037CD6F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9436751FAACA3A0037CD6F /* CircleImage.swift */; };
+		FF9F0F391FB54A9300959C4D /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F0F381FB54A9300959C4D /* SocketService.swift */; };
 		FFB4674B1FA2787100B4CCD7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB467491FA2787100B4CCD7 /* SWRevealViewController.m */; };
 		FFB467501FA27E5700B4CCD7 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4674F1FA27E5700B4CCD7 /* ChatVC.swift */; };
 		FFB467521FA27E6500B4CCD7 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB467511FA27E6500B4CCD7 /* ChannelVC.swift */; };
@@ -48,6 +49,7 @@
 		FF7E89C21FA2647D0056C04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF7E89C41FA2647D0056C04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9436751FAACA3A0037CD6F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		FF9F0F381FB54A9300959C4D /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		FFB467481FA2787000B4CCD7 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		FFB467491FA2787100B4CCD7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FFB4674A1FA2787100B4CCD7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */,
 				FFF69E691FA9016000C0A8B8 /* UserDataService.swift */,
 				FF6A71531FB2A8EC00BEA753 /* MessageService.swift */,
+				FF9F0F381FB54A9300959C4D /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9F0F391FB54A9300959C4D /* SocketService.swift in Sources */,
 				FFF15E8F1FABB6E200ECC939 /* ProfileVC.swift in Sources */,
 				FF6A71581FB2AE9D00BEA753 /* ChannelCell.swift in Sources */,
 				FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */,
