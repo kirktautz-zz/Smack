@@ -90,6 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="S7t-IE-AXO"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLabel" destination="ETT-u7-EVc" id="D0r-nb-qEr"/>
                         <outlet property="menuBtn" destination="ZxQ-6v-koo" id="p79-iP-LSl"/>
                     </connections>
                 </viewController>

@@ -24,6 +24,7 @@
 		FFB467571FA295E000B4CCD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB467561FA295E000B4CCD7 /* Constants.swift */; };
 		FFB467591FA2990200B4CCD7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB467581FA2990200B4CCD7 /* LoginVC.swift */; };
 		FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4675A1FA29A7900B4CCD7 /* SignUpVC.swift */; };
+		FFE85B0A1FB66D1300E80DAA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE85B091FB66D1300E80DAA /* Message.swift */; };
 		FFF15E8F1FABB6E200ECC939 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF15E8D1FABB6E200ECC939 /* ProfileVC.swift */; };
 		FFF15E901FABB6E200ECC939 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF15E8E1FABB6E200ECC939 /* ProfileVC.xib */; };
 		FFF69E661FA8E45A00C0A8B8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */; };
@@ -59,6 +60,7 @@
 		FFB467561FA295E000B4CCD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFB467581FA2990200B4CCD7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FFB4675A1FA29A7900B4CCD7 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		FFE85B091FB66D1300E80DAA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FFF15E8D1FABB6E200ECC939 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		FFF15E8E1FABB6E200ECC939 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		FFF69E651FA8E45A00C0A8B8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				FF6A71551FB2A93000BEA753 /* Channel.swift */,
+				FFE85B091FB66D1300E80DAA /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				FFB4675B1FA29A7900B4CCD7 /* SignUpVC.swift in Sources */,
 				FFF69E6C1FA9090F00C0A8B8 /* AvatarPickerVC.swift in Sources */,
 				FFF69E681FA8EBE200C0A8B8 /* RoundedButton.swift in Sources */,
+				FFE85B0A1FB66D1300E80DAA /* Message.swift in Sources */,
 				FF6A71561FB2A93000BEA753 /* Channel.swift in Sources */,
 				FF9436761FAACA3A0037CD6F /* CircleImage.swift in Sources */,
 				FF6A71541FB2A8EC00BEA753 /* MessageService.swift in Sources */,
