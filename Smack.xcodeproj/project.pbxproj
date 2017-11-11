@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F5107FD47F0ADBFC6C4803F /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51480A805725DF70CB5659DC /* Pods_Smack.framework */; };
+		FF2A560F1FB794400011136F /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A560E1FB794400011136F /* KeyboardBoundView.swift */; };
 		FF6A71541FB2A8EC00BEA753 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A71531FB2A8EC00BEA753 /* MessageService.swift */; };
 		FF6A71561FB2A93000BEA753 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A71551FB2A93000BEA753 /* Channel.swift */; };
 		FF6A71581FB2AE9D00BEA753 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A71571FB2AE9D00BEA753 /* ChannelCell.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		51480A805725DF70CB5659DC /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F89EF1200E76595A6F73FD /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2A560E1FB794400011136F /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		FF6A71531FB2A8EC00BEA753 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		FF6A71551FB2A93000BEA753 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		FF6A71571FB2AE9D00BEA753 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				FFB4674A1FA2787100B4CCD7 /* SWRevealViewController.h */,
 				FFB467491FA2787100B4CCD7 /* SWRevealViewController.m */,
 				FFB467481FA2787000B4CCD7 /* Smack-Bridging-Header.h */,
+				FF2A560E1FB794400011136F /* KeyboardBoundView.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2A560F1FB794400011136F /* KeyboardBoundView.swift in Sources */,
 				FF9F0F391FB54A9300959C4D /* SocketService.swift in Sources */,
 				FFF15E8F1FABB6E200ECC939 /* ProfileVC.swift in Sources */,
 				FF6A71581FB2AE9D00BEA753 /* ChannelCell.swift in Sources */,

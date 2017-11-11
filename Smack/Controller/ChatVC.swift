@@ -13,6 +13,7 @@ class ChatVC: UIViewController {
     // outlets
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLabel: UILabel!
+    @IBOutlet weak var messageField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,13 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             })
         }
+        view.bindToKeyboard()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap(_ gest: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     @objc func userDataDidChange(notif: Notification) {
@@ -65,6 +73,19 @@ class ChatVC: UIViewController {
         
         MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
             
+        }
+    }
+    @IBAction func sendMsgPressed(_ sender: UIButton) {
+        if AuthService.instance.isLoggedIn {
+            guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+            guard let message = messageField.text else { return }
+            
+            SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId, completion: { (success) in
+                if success {
+                    self.messageField.text = ""
+                    self.messageField.resignFirstResponder()
+                }
+            })
         }
     }
 }
